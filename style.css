@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(20, 22, 22);
+  color: rgb(48, 249, 34);
+}
+h1,h5,a {
+  color: #0cf800;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(171, 171, 171);
+  font-size: 18px;
+
+}
+.bg-body-tertiary {
+  --mdb-bg-opacity: 1;
+  background: linear-gradient(111.4deg, rgb(2, 255, 4) 18.4%, rgb(0, 237, 87) 100.2%);
+}
+#intro {
+  --mdb-bg-opacity: 1;
+  background-color: #161c17;
+}
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: var(--mdb-list-group-item-padding-y) var(--mdb-list-group-item-padding-x);
+  color: var(--mdb-list-group-color);
+  background-color: var(--mdb-list-group-bg);
+  border: 1px solid #2abd23;
+}
+.list-group-item.active {
+  z-index: 2;
+  color: rgb(51, 52, 51);
+  background-color: rgb(48, 249, 34);
+  border-color: rgb(48, 249, 34);
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+  z-index: 1;
+  color: var(--mdb-list-group-action-hover-color);
+  text-decoration: none;
+  background-color: rgb(48, 249, 34);
+}
+.sublist {
+    padding-left: 40px; /* Adjust the padding as needed */
+    list-style: none;
+  }
+  
+  .sublist li {
+    margin-bottom: 5px; /* Adjust the margin as needed */
+  }
+  
+  .sublist li::before {
+    content: "•"; /* Use a different symbol if desired */
+    display: inline-block;
+    width: 1em; /* Adjust the width as needed */
+    margin-left: -1em; /* Adjust the margin as needed */
+  }
+  .sublist {
+    display: none;
+  }
+  
+  .sublist.active {
+    display: block;
+  }
+
+#main-content {
+    height: 700px; /* Set a fixed height */
+    overflow-y: scroll; /* Add vertical scrollbar */
+    scrollbar-width: thin; /* Set the width of the scrollbar */
+    scrollbar-color: transparent transparent; /* Set the color of the scrollbar track and thumb */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+/* Hide the scrollbar thumb when not hovered */
+#main-content::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* Show the scrollbar thumb on hover */
+#main-content:hover::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Set the color of the scrollbar thumb on hover */
+}
+/* Style for the links in the table */
+
+
+.table {
+  --mdb-table-color-type: initial;
+  --mdb-table-bg-type: initial;
+  --mdb-table-color-state: initial;
+  --mdb-table-bg-state: initial;
+  --mdb-table-color: var(--mdb-body-color);
+  --mdb-table-bg: rgb(20, 22, 22);;
+  --mdb-table-border-color: #27a41424;
+  --mdb-table-accent-bg: transparent;
+  --mdb-table-striped-color: var(--mdb-body-color);
+  --mdb-table-striped-bg: rgba(0, 0, 0, 0.02);
+  --mdb-table-active-color: #3b3333;
+  --mdb-table-active-bg: rgba(var(--mdb-emphasis-color-rgb), 0.1);
+  --mdb-table-hover-color: var(--mdb-body-color);
+  --mdb-table-hover-bg: rgba(0, 0, 0, 0.025);
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  border-color: var(--mdb-table-border-color);
+}
+.table {
+  --mdb-table-font-size: 1.3rem;
+  --mdb-table-divider-color: currentcolor;
+  font-size: var(--mdb-table-font-size);
+}
+pre {
+  background-color: #161c17;
+  border: 0px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  color: rgb(164, 246, 169);
+  font-size: 18px;
+}
+
+code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  color: #333;
+}
+::selection {
+  color: rgb(17, 15, 15);
+  background-color: #0cf800;
+}
