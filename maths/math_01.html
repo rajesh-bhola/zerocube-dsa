@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>000 - starting from nothing and gradually building knowledge and understanding.</title>
+  <title>Documentation Website</title>
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -85,12 +85,12 @@
     <div class="row mt-3">
       <div class="col-md-3 sidebar">
         <div class="list-group">
-          <a href="introduction.html" class="list-group-item list-group-item-action" aria-current="true">
+          <a href="../topics/introduction.html" class="list-group-item list-group-item-action" aria-current="true">
             Introduction to DSA
           </a>
-          <a href="getting-started.html" class="list-group-item list-group-item-action active"
+          <a href="../topics/getting-started.html" class="list-group-item list-group-item-action"
           >Getting Started</a>
-          <a href="../topics/maths.html" class="list-group-item list-group-item-action ">Maths</a>
+          <a href="../topics/maths.html" class="list-group-item list-group-item-action active">Maths</a>
           <a href="../topics/arrays.html" class="list-group-item list-group-item-action">Arrays</a>
           <a href="../topics/matrix.html" class="list-group-item list-group-item-action">Matrix</a>
           <a href="../topics/strings.html" class="list-group-item list-group-item-action">Strings</a>
@@ -113,14 +113,31 @@
           <a href="../topics/divide-and-conquer-algorithms.html" class="list-group-item list-group-item-action">Divide & Conquer Algorithms</a>
           <a href="../topics/dynamic-programmings.html" class="list-group-item list-group-item-action">Dynamic Programmings</a>
           <a href="../topics/tries.html" class="list-group-item list-group-item-action">Tries</a>
-        
+
         </div><br>
       </div>
 
 
       <div class="col-md-9" id="main-content">
-        <h1>Getting Started</h1>
-        <p>This website will help you to practice the DSA coding. So first chose a topic and start learning about that topic then start the code and do it step-by-step. Either you have to practice it using online compilers or in your own IDE whichever way you want to.</p>
+        <h1>Addition of two numbers</h1><br>
+        <p>
+          <b>Input:</b> num1 = 12, num2 = 5 <br>
+          <b>Output:</b> 17 <br>
+          <b>Explanation:</b> num1 is 12, num2 is 5, and their sum is 12 + 5 = 17, so 17 is returned.
+        </p>
+        <pre>
+    <code>
+        public class Main {
+            public static void main(String[] args) {
+                int num1 = 12;
+                int num2 = 5;
+                int sum = num1 + num2;
+                System.out.println("Sum: " + sum);
+            }
+        }
+        
+    </code>
+</pre>
 
       </div>
 
@@ -128,7 +145,8 @@
   </div>
 
 
-<!-- Footer -->
+
+  <!-- Footer -->
 <footer class="bg-body-tertiary1 text-center">
   <!-- Grid container -->
   <div class="container p-4">
@@ -172,16 +190,15 @@
   <!-- Copyright -->
   <div class="text-center p-3 text-dark" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2024 Copyright:
-    <a class="" href="index.html"> ZeroCube</a>
+    <a class="" href="index.html">  ZeroCube</a>
   </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
 
-
   <!-- MDB -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
-  <script src="../script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
